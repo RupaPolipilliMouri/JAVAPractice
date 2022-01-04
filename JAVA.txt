@@ -1,0 +1,68 @@
+Introdunction to pgrming languages
+=================================
+We can choose any high level pgrmnig lang
+
+C=>Milestone for the applications(Microsoft,Windows os,Macro op Linux based on c lang
+c++
+Pascal
+Visual C++
+Java
+.Net
+We will code using english lang converted into machine lang using translators(Compiler/interpreter)
+
+
+
+
+
+JAVA
+=====
+
+BuZZWords
+==========
+S2 PORMA HI D2
+
+Simple
+Secure
+Portable
+Object Oriented
+Robust
+Muliti threaded
+Architectural Neutral 
+High  performance
+Interpreted
+Distributed
+Dynamic
+
+
+History of Java
+=============
+interactibve television=>
+
+
+
+public class MyName{
+	
+	public static void main(String[] args) {
+		System.out.println("Mourite");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
