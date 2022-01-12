@@ -1,59 +1,50 @@
-package InterfacePracticeExample;
+package ConstructorsAccessModifiersemp;
 
-public class Employee implements Payable{
-	
-	private String firstName;
-	 private String lastName;
-	  private String socialSecurityNumber;
-	 
-	// three-argument constructor
-	public Employee( String first, String last, String ssn ) {
-	 firstName = first;
-	 lastName = last;
-	socialSecurityNumber = ssn;
-	 } // end three-argument Employee constructor
-	
-	// set first name
-	 public void setFirstName( String first ){
-	 firstName = first;
-	} // end method setFirstName
-	
-	 // return first name
-	 public String getFirstName() {
-	 return firstName;
-	 } // end method getFirstName
-	
-	 // set last name
-	 public void setLastName( String last ) {
-	 lastName = last;
-	 } // end method setLastName
-	
-	 // return last name
-	 public String getLastName(){
-	 return lastName;
-	 } // end method getLastName
-	
-	// set social security number
-	 public void setSocialSecurityNumber( String ssn ) {
-	 socialSecurityNumber = ssn; // should validate
-	 } // end method setSocialSecurityNumber
-	
-	 // return social security number
-	 public String getSocialSecurityNumber(){
-	 return socialSecurityNumber;
-	 } // end method getSocialSecurityNumber
-	
-	// return String representation of Employee object
-	 public String toString() {
-     return String.format( "%s %s\nsocial security number: %s",getFirstName(), getLastName(), getSocialSecurityNumber());
-	 } // end method toString
+import java.util.Scanner;
 
-	@Override
-	public double getPaymentAmount() {
-		// TODO Auto-generated method stub
-		return 0;
+import ConstructorsAccessModifiers.CEO;
+
+public class Employee extends CEO {
+
+	public String emp_email;
+	private String emp_password;
+	Scanner sc=new Scanner(System.in);
+	
+
+	 public void EnterEmployeeDetails(){
+		System.out.println("Enter Employee email");
+		
+		emp_email=sc.next();
+		System.out.println("Enter Employee password");
+		emp_password=sc.next();
+		
 	}
 	
 	
-	
+public void viewEmployeeDetails() {
+	System.out.println("view employee details");
+		
+		System.out.println("Employee email="+emp_email);
+		System.out.println("Employee password="+emp_password);
+	}
+	public String getEmp_email() {
+		return emp_email;
+	}
+	public void setEmp_email(String emp_email) {
+		this.emp_email = emp_email;
+	}
+	public String getEmp_password() {
+		return emp_password;
+	}
+	public void setEmp_password(String emp_password) {
+		this.emp_password = emp_password;
+	}
+	public Scanner getSc() {
+		return sc;
+	}
+	public void setSc(Scanner sc) {
+		this.sc = sc;
+	}
+
+
 }
