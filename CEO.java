@@ -1,4 +1,4 @@
-package accesmodifiers;
+package ConstructorsAccessModifiers;
 
 import java.util.Scanner;
 
